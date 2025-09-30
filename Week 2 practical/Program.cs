@@ -1,4 +1,12 @@
-﻿Main();
+﻿/*
+ * Practical 2
+ * Information: Methods demo
+ * Version 1
+ * Auther: Mr Conor Wilson
+ * Date: 30/09/25
+ * */
+
+Main();
 
 void Main()
 {
