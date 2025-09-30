@@ -8,12 +8,23 @@
 
 Main();
 
+    // Task 4
+
+    // Do-while loop
+    // Method should run until 0 is entered
+
 void Main()
 {
-    PrintMenu();
-    int option = Convert.ToInt32(Console.ReadLine());
-    InputOption(option);
-    GetMessage(option);
+    int option = 8;
+    do
+    {
+        PrintMenu();
+        Console.WriteLine("Enter 9 to quit");
+        option = Convert.ToInt32(Console.ReadLine());
+        InputOption(option);
+        GetMessage(option);
+    } while (option < 9);
+    Console.WriteLine("Enter 9 to quit");
 }
 
 
