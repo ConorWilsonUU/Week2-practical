@@ -4,6 +4,7 @@ void Main()
 {
     PrintMenu();
     int option = Convert.ToInt32(Console.ReadLine());
+    InputOption(option);
 }
 
 
@@ -36,5 +37,30 @@ void PrintMenu()
 
 int InputOption(int a)
 {
-    return a;
+    if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4)
+    {
+        return a;
+    }
+    return -1;
 }
+
+
+//
+    //case '0':
+       // result = a;
+       // break;
+   // case '1':
+    //    result = a;
+    //    break;
+  //  case '2':
+  //      result = a;
+       // break;
+   // case '3':
+    //    result = a;
+     //   break;
+    //case '4':
+    //    result = a;
+    //    break;
+    //default:
+    //    Console.WriteLine("Invalid Option");
+    //    return a;
