@@ -31,36 +31,23 @@ void PrintMenu()
     // E.G User input goes into InputOption,
     // return it to Main(), store from InputOption into
     // option named varible
-
     // Add try-catch
 
 
 int InputOption(int a)
 {
-    if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4)
+    try
     {
-        return a;
+        if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4)
+        {
+            return a;
+        }
+        return -1;
+    }
+    catch ( Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
     }
     return -1;
 }
 
-
-//
-    //case '0':
-       // result = a;
-       // break;
-   // case '1':
-    //    result = a;
-    //    break;
-  //  case '2':
-  //      result = a;
-       // break;
-   // case '3':
-    //    result = a;
-     //   break;
-    //case '4':
-    //    result = a;
-    //    break;
-    //default:
-    //    Console.WriteLine("Invalid Option");
-    //    return a;
