@@ -1,10 +1,13 @@
-﻿Main();
+﻿using System.Reflection.Metadata;
+
+Main();
 
 void Main()
 {
     PrintMenu();
     int option = Convert.ToInt32(Console.ReadLine());
     InputOption(option);
+    GetMessage(option);
 }
 
 
@@ -50,4 +53,39 @@ int InputOption(int a)
     }
     return -1;
 }
+
+
+    // Task 3
+
+    // Method name should be GetMessage()
+    // Use a switch statement
+    // Return hello in language
+
+void GetMessage(int a)
+{
+    string language = " ";
+    switch (a)
+    {
+        case '0':
+            language = "GoodBye";
+            break;
+        case '1':
+            language = "Bonjour";
+            break;
+        case '2':
+            language = "Ola";
+            break;
+        case '3':
+            language = "Hallo";
+            break;
+        case '4':
+            language = "Ciao";
+            break;
+        default:
+            Console.WriteLine("Please enter a valid option");
+            return;
+    }
+    Console.WriteLine($"{language}");
+}
+
 
