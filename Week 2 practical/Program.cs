@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata;
-
-Main();
+﻿Main();
 
 void Main()
 {
@@ -43,15 +41,18 @@ int InputOption(int a)
     {
         if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4)
         {
-            return a;
+        return a;
         }
+        else
+        {
         return -1;
+        }
     }
     catch ( Exception ex)
     {
         Console.WriteLine(ex.ToString());
     }
-    return -1;
+    return a;
 }
 
 
@@ -66,19 +67,19 @@ void GetMessage(int a)
     string language = " ";
     switch (a)
     {
-        case '0':
+        case 0:
             language = "GoodBye";
             break;
-        case '1':
+        case 1:
             language = "Bonjour";
             break;
-        case '2':
+        case 2:
             language = "Ola";
             break;
-        case '3':
+        case 3:
             language = "Hallo";
             break;
-        case '4':
+        case 4:
             language = "Ciao";
             break;
         default:
