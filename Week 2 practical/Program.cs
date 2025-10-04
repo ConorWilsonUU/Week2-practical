@@ -15,16 +15,22 @@ Main();
 
 void Main()
 {
-    int option = 8;
-    do
-    {
-        PrintMenu();
-        Console.WriteLine("Enter 9 to quit");
-        option = Convert.ToInt32(Console.ReadLine());
-        InputOption(option);
-        GetMessage(option);
-    } while (option < 9);
-    Console.WriteLine("Enter 9 to quit");
+    //Task 1 - 4 
+
+    //int option = 8;
+    //do
+    //{
+        //PrintMenu();
+        //Console.WriteLine("Enter 9 to quit");
+        //option = Convert.ToInt32(Console.ReadLine());
+        //InputOption(option);
+       //GetMessage(option);
+    //} while (option < 9);
+    //Console.WriteLine("Enter 9 to quit");
+
+    //Task 5 - 8
+
+    AcceptString();
 }
 
 
@@ -106,6 +112,21 @@ void GetMessage(int a)
             return;
     }
     Console.WriteLine($"{language}");
+}
+
+//Task 5
+//String variable called string
+//First letter of each word capitalised
+//Print number of words in the string
+
+void AcceptString()
+{
+    Console.WriteLine("Enter a string");
+    string str = Convert.ToString(Console.ReadLine());
+    Console.WriteLine($"The sentence you inputted is: {str.ToUpper()}");
+    int Amount = str.Length;
+    Console.WriteLine($"Number of words = {Amount}");
+
 }
 
 
